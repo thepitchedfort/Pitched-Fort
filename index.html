@@ -16,10 +16,8 @@
      • Themes, add-ons, pricing & FAQ are generated from the data
        arrays in the <script> near the bottom — edit those to add,
        remove, or reword items.
-     • To send inquiries to your email, see the note above the
-       <form> (search for "FORM_ENDPOINT").
-     • To add photos, replace the .placeholder blocks (search
-       "placeholder") with: <img src="your-photo.jpg" alt="..." />
+     • The inquiry form is the live Google Form embedded as an
+       <iframe> in the CONTACT / INQUIRY section below.
 ─────────────────────────────────────────────────────────────── -->
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2322395B'/%3E%3Ccircle cx='44' cy='20' r='8' fill='%23ECD6A8'/%3E%3Ccircle cx='47' cy='18' r='7' fill='%2322395B'/%3E%3Cpath d='M32 22 L50 50 H14 Z' fill='none' stroke='%23EBB7BE' stroke-width='3'/%3E%3Cpath d='M32 22 L32 50' stroke='%239DB29A' stroke-width='3'/%3E%3C/svg%3E" />
@@ -307,11 +305,8 @@
 
 <!-- ───────────── CONTACT / INQUIRY ───────────── -->
 <!--
-  WHERE DOES THIS FORM SEND?
-  By default it shows a thank-you message and links to your Google Form
-  as a reliable backup. To receive submissions by EMAIL, create a free
-  endpoint at https://formspree.io and paste the URL into the
-  FORM_ENDPOINT value in the <script> at the bottom of this file.
+  The inquiry form is the live Google Form embedded via <iframe> below.
+  Submissions go straight to the linked Google Form / responses sheet.
 -->
 <section id="contact" class="scroll-mt relative overflow-hidden bg-gradient-to-b from-navy to-navy-deep text-cream">
   <div class="pointer-events-none absolute inset-0 overflow-hidden opacity-70" aria-hidden="true" data-starfield></div>
@@ -325,36 +320,15 @@
 
 <section class="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8">
   <div class="grid gap-10 lg:grid-cols-[1fr_340px]">
-    <form class="card p-6 sm:p-9" data-inquiry-form novalidate>
-      <div class="grid gap-5 sm:grid-cols-2">
-        <div><label for="parentName" class="mb-1.5 block text-sm font-bold text-navy">Parent / Guardian Name <span class="text-blush-deep">*</span></label><input id="parentName" name="parentName" type="text" required autocomplete="name" class="field-input" placeholder="Your name" /></div>
-        <div><label for="email" class="mb-1.5 block text-sm font-bold text-navy">Email <span class="text-blush-deep">*</span></label><input id="email" name="email" type="email" required autocomplete="email" class="field-input" placeholder="you@email.com" /></div>
-        <div><label for="phone" class="mb-1.5 block text-sm font-bold text-navy">Phone <span class="text-blush-deep">*</span></label><input id="phone" name="phone" type="tel" required autocomplete="tel" class="field-input" placeholder="(318) 555-0123" /></div>
-        <div><label for="eventDate" class="mb-1.5 block text-sm font-bold text-navy">Event Date</label><input id="eventDate" name="eventDate" type="date" class="field-input" /></div>
-        <div class="sm:col-span-2"><label for="location" class="mb-1.5 block text-sm font-bold text-navy">Event Address or Zip Code</label><input id="location" name="location" type="text" class="field-input" placeholder="Street address or zip — helps us confirm travel" /></div>
-        <div><label for="guestOfHonor" class="mb-1.5 block text-sm font-bold text-navy">Guest of Honor’s Name</label><input id="guestOfHonor" name="guestOfHonor" type="text" class="field-input" placeholder="The birthday star!" /></div>
-        <div><label for="age" class="mb-1.5 block text-sm font-bold text-navy">Age Being Celebrated</label><input id="age" name="age" type="text" inputmode="numeric" class="field-input" placeholder="e.g. 8" /></div>
-        <div><label for="guests" class="mb-1.5 block text-sm font-bold text-navy">Number of Guests</label><select id="guests" name="guests" class="field-input"><option value="" disabled selected>Select guest count</option></select></div>
-        <div><label for="theme" class="mb-1.5 block text-sm font-bold text-navy">Preferred Theme</label><select id="theme" name="theme" class="field-input"><option value="">Choose a theme (or decide later)</option></select></div>
-        <div class="sm:col-span-2">
-          <span class="mb-1.5 block text-sm font-bold text-navy">Full-Service or DIY Pickup?</span>
-          <div class="grid gap-3 sm:grid-cols-2">
-            <label class="flex cursor-pointer items-start gap-3 rounded-2xl border border-navy/15 bg-white p-4 transition hover:border-blush-deep has-[:checked]:border-blush-deep has-[:checked]:bg-blush-soft/30"><input type="radio" name="serviceType" value="Full-Service" class="mt-1 accent-navy" /><span><span class="block font-semibold text-navy">Full-Service</span><span class="block text-xs text-navy/60">We deliver, set up &amp; style it all</span></span></label>
-            <label class="flex cursor-pointer items-start gap-3 rounded-2xl border border-navy/15 bg-white p-4 transition hover:border-blush-deep has-[:checked]:border-blush-deep has-[:checked]:bg-blush-soft/30"><input type="radio" name="serviceType" value="DIY Pickup" class="mt-1 accent-navy" /><span><span class="block font-semibold text-navy">DIY Pickup</span><span class="block text-xs text-navy/60">You pick up &amp; set up the kit</span></span></label>
-          </div>
-        </div>
-        <div class="sm:col-span-2">
-          <span class="mb-1.5 block text-sm font-bold text-navy">Interested Add-Ons (optional)</span>
-          <div class="grid max-h-56 grid-cols-1 gap-2 overflow-y-auto rounded-2xl border border-navy/15 bg-white p-3 sm:grid-cols-2" data-addon-checks></div>
-        </div>
-        <div class="sm:col-span-2"><label for="setupNotes" class="mb-1.5 block text-sm font-bold text-navy">Party Setup Location Notes</label><textarea id="setupNotes" name="setupNotes" rows="2" class="field-input" placeholder="First floor, upstairs, stairs/elevator access, parking, etc."></textarea></div>
-        <div class="sm:col-span-2"><label for="interests" class="mb-1.5 block text-sm font-bold text-navy">Favorite Things / Interests of the Guest of Honor</label><textarea id="interests" name="interests" rows="2" class="field-input" placeholder="Favorite colors, characters, hobbies — help us personalize the magic!"></textarea></div>
-        <div class="sm:col-span-2"><label for="special" class="mb-1.5 block text-sm font-bold text-navy">Special Requests</label><textarea id="special" name="special" rows="2" class="field-input" placeholder="Anything else we should know?"></textarea></div>
-        <div class="sm:col-span-2"><label for="hearAbout" class="mb-1.5 block text-sm font-bold text-navy">How Did You Hear About Us?</label><select id="hearAbout" name="hearAbout" class="field-input"><option value="" disabled selected>Select an option</option><option>Facebook</option><option>Instagram</option><option>TikTok</option><option>Friend or family</option><option>Google search</option><option>A past party</option><option>Other</option></select></div>
-      </div>
-      <button type="submit" class="btn btn-primary mt-7 w-full !text-base">Request My Tent Party</button>
-      <p class="mt-4 text-center text-xs text-navy/55">By submitting, you agree we may contact you about your inquiry. We respect your privacy and never share your information.</p>
-    </form>
+    <div class="card overflow-hidden p-4 sm:p-6">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSduGDZtB_ERR1MVa0e-LiXNowE3Xcb9UMvyE6VDoe45n0Yl-w/viewform?embedded=true"
+        title="The Pitched Fort inquiry form"
+        class="w-full rounded-2xl"
+        style="height:1500px;border:0"
+        loading="lazy"
+        marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
 
     <aside class="flex flex-col gap-6">
       <div class="card p-7">
@@ -373,8 +347,8 @@
         <a href="https://www.facebook.com/thepitchedfort" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block text-sm font-semibold text-blush-deep hover:underline">Facebook →</a>
       </div>
       <div class="rounded-4xl border border-dashed border-navy/25 bg-white/60 p-6 text-sm text-navy/70">
-        <p class="font-bold text-navy">Prefer our original form?</p>
-        <p class="mt-2 leading-relaxed">You can also submit through our <a href="https://docs.google.com/forms/d/e/1FAIpQLSduGDZtB_ERR1MVa0e-LiXNowE3Xcb9UMvyE6VDoe45n0Yl-w/viewform" target="_blank" rel="noopener noreferrer" class="font-semibold text-blush-deep underline">Google Form</a>.</p>
+        <p class="font-bold text-navy">Trouble with the form?</p>
+        <p class="mt-2 leading-relaxed">Open it in a new tab on <a href="https://docs.google.com/forms/d/e/1FAIpQLSduGDZtB_ERR1MVa0e-LiXNowE3Xcb9UMvyE6VDoe45n0Yl-w/viewform" target="_blank" rel="noopener noreferrer" class="font-semibold text-blush-deep underline">Google Forms</a> instead.</p>
       </div>
     </aside>
   </div>
@@ -429,8 +403,6 @@
 /* ═══════════════════════════════════════════════════════════════
    SITE DATA — edit these arrays to update the site content.
 ═══════════════════════════════════════════════════════════════ */
-const FORM_ENDPOINT = ''; // paste a Formspree URL here to receive inquiries by email
-
 const PRICING = [
   {guests:2, full:225, diy:175},{guests:3, full:260, diy:195},{guests:4, full:325, diy:250},
   {guests:5, full:390, diy:290},{guests:6, full:455, diy:335},{guests:7, full:520, diy:395},
@@ -582,11 +554,6 @@ $('[data-addons]').innerHTML = ADDONS.map(a => `
     <h3 class="mt-4 font-serif text-lg font-semibold text-navy">${esc(a.name)}</h3>
     <p class="mt-1.5 text-sm leading-relaxed text-navy/70">${esc(a.d)}</p>
   </div>`).join('');
-$('[data-addon-checks]').innerHTML = ADDONS.map(a => `
-  <label class="flex cursor-pointer items-center gap-2.5 rounded-xl px-2.5 py-2 text-sm transition hover:bg-cream-deep/50 has-[:checked]:bg-sage-soft/40">
-    <input type="checkbox" name="addons" value="${esc(a.name)}" class="accent-sage-deep" />
-    <span class="text-navy/80">${esc(a.name)}</span>
-  </label>`).join('');
 
 // Pricing
 $('[data-pricing]').innerHTML = PRICING.map(p => `
@@ -644,15 +611,9 @@ $('[data-policies]').innerHTML = POLICIES.map(p => `
       `<li class="flex items-start gap-3 leading-relaxed text-navy/75"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sage"></span><span>${esc(line)}</span></li>`).join('')}</ul>
   </section>`).join('');
 
-// Populate form selects
-$('#guests').insertAdjacentHTML('beforeend', [...PRICING.map(p=>String(p.guests)),'More than 10'].map(g=>`<option value="${g}">${g}</option>`).join(''));
-$('#theme').insertAdjacentHTML('beforeend', THEMES.map(t=>`<option value="${esc(t.name)}">${esc(t.name)}</option>`).join(''));
-
-// "Ask About This Theme" → preselect + scroll to form
+// "Ask About This Theme" → scroll to the inquiry form
 $$('[data-ask-theme]').forEach(btn => btn.addEventListener('click', () => {
-  $('#theme').value = btn.dataset.askTheme;
   $('#contact').scrollIntoView({behavior:'smooth'});
-  setTimeout(()=>$('#parentName').focus(), 600);
 }));
 
 // Mobile menu
@@ -670,40 +631,6 @@ const header = $('[data-header]');
 const onScroll = () => header.classList.toggle('shadow-card', window.scrollY > 12);
 onScroll(); window.addEventListener('scroll', onScroll);
 
-// Form submit
-const form = $('[data-inquiry-form]');
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  if (!form.reportValidity()) return;
-  const btn = $('button[type="submit"]', form);
-  btn.textContent = 'Sending…'; btn.disabled = true;
-
-  const showThanks = () => {
-    form.innerHTML = `
-      <div class="py-6 text-center">
-        <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-sage-soft/60">
-          <svg viewBox="0 0 24 24" class="h-8 w-8 text-blush-deep" fill="currentColor"><path d="M12 21s-7.5-4.8-10-9.3C.6 8.9 2 5.5 5.3 5.1c2-.2 3.5 1 4.7 2.5C11.2 6.1 12.7 5 14.7 5.1c3.3.3 4.7 3.8 3.3 6.6C19.5 16.2 12 21 12 21z"/></svg>
-        </div>
-        <h3 class="mt-5 font-serif text-2xl font-semibold text-navy">Thank you!</h3>
-        <p class="mx-auto mt-4 max-w-md text-navy/75 leading-relaxed">We received your inquiry and will be in touch soon to confirm availability and party details. We can’t wait to help you create something dreamy!</p>
-        <a href="#top" class="btn btn-primary mt-7">Back to Top</a>
-      </div>`;
-    form.scrollIntoView({behavior:'smooth', block:'center'});
-  };
-
-  if (FORM_ENDPOINT) {
-    try {
-      const res = await fetch(FORM_ENDPOINT, { method:'POST', body:new FormData(form), headers:{Accept:'application/json'} });
-      if (res.ok) return showThanks();
-      throw new Error('bad response');
-    } catch {
-      btn.textContent = 'Request My Tent Party'; btn.disabled = false;
-      alert('Something went wrong sending your inquiry. Please try our Google Form backup in the sidebar.');
-    }
-  } else {
-    setTimeout(showThanks, 400);
-  }
-});
 </script>
 </body>
 </html>

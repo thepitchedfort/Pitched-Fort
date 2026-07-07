@@ -1,0 +1,8 @@
+# The live site is the standalone index.html + photos/ + logos.
+# Keep the deployment lean — exclude everything not served.
+.git
+.claude
+.DS_Store
+react-app
+New Folder With Items
+486569689_670568662164892_1976168674469140102_n.jpeg
