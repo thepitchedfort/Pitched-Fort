@@ -1,0 +1,22 @@
+# OS junk
+.DS_Store
+
+# Node / build output (react-app)
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+
+# Claude local settings (machine-specific)
+.claude/settings.local.json
+
+# Original unprocessed photo dumps (clean copies live in /photos)
+New Folder With Items/
+486569689_670568662164892_1976168674469140102_n.jpeg

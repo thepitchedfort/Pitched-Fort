@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" width="460" height="120" role="img" aria-label="The Pitched Fort">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&amp;display=swap');
+      .wm { font-family: 'Fraunces', Georgia, serif; font-weight: 600; fill: #22395B; }
+    </style>
+  </defs>
+  <!-- emblem -->
+  <g transform="translate(8,10) scale(1)">
+    <g fill="#D9B26A">
+      <path d="M28 22 l1.5 3.4 3.6.4-2.7 2.6.7 3.6-3.1-1.8-3.1 1.8.7-3.6-2.7-2.6 3.6-.4z"/>
+      <circle cx="84" cy="32" r="1.7"/>
+      <circle cx="74" cy="18" r="1.2"/>
+    </g>
+    <circle cx="80" cy="24" r="8.6" fill="#ECD6A8"/>
+    <circle cx="83.5" cy="22" r="7.2" fill="#FBF5EB"/>
+    <path d="M54 33 L78 88 H30 Z" fill="none" stroke="#22395B" stroke-width="3.2" stroke-linejoin="round"/>
+    <path d="M54 56 L44 88 H64 Z" fill="#EBB7BE"/>
+    <path d="M54 33 V56" stroke="#9DB29A" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M54 33 L48.5 26.5 M54 33 L59.5 26.5" stroke="#22395B" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M54 26.5 V19 L63 22.5 L54 26.5" fill="#9DB29A"/>
+  </g>
+  <!-- wordmark -->
+  <text class="wm" x="120" y="72" font-size="40">The Pitched Fort</text>
+</svg>

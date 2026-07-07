@@ -1,0 +1,76 @@
+/* ── Google Fonts: elegant serif + soft script + clean sans ── */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Nunito:wght@400;500;600;700;800&family=Sacramento&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-navy font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif;
+  }
+
+  /* Accessible focus ring across all interactive elements */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    @apply outline-none ring-2 ring-offset-2 ring-blush-deep ring-offset-cream;
+  }
+}
+
+@layer components {
+  /* Centered content container used across every section */
+  .container-tpf {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  /* The soft script "accent" line used above headings */
+  .eyebrow {
+    @apply font-script text-2xl text-blush-deep leading-none;
+  }
+
+  /* Rounded boutique card — the core building block (form-inspired) */
+  .card-tpf {
+    @apply rounded-4xl border border-navy/10 bg-white shadow-card;
+  }
+
+  /* Primary + secondary button styles */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5
+      text-sm font-bold uppercase tracking-wider transition
+      focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-primary {
+    @apply btn bg-navy text-cream hover:bg-navy-deep hover:-translate-y-0.5 shadow-soft;
+  }
+  .btn-secondary {
+    @apply btn border-2 border-navy bg-transparent text-navy hover:bg-navy hover:text-cream;
+  }
+  .btn-blush {
+    @apply btn bg-blush text-navy-deep hover:bg-blush-deep hover:text-white hover:-translate-y-0.5 shadow-soft;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}

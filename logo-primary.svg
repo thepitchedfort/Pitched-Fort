@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" width="320" height="260" role="img" aria-label="The Pitched Fort — luxury sleepovers">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&amp;family=Sacramento&amp;display=swap');
+      .wm { font-family: 'Fraunces', Georgia, serif; font-weight: 600; fill: #22395B; }
+      .tag { font-family: 'Sacramento', cursive; fill: #D98C97; }
+    </style>
+  </defs>
+  <!-- emblem (centered) -->
+  <g transform="translate(110,4)">
+    <g fill="#D9B26A">
+      <path d="M28 24 l1.7 3.8 4 .5-3 2.9.8 4-3.5-2-3.5 2 .8-4-3-2.9 4-.5z"/>
+      <circle cx="90" cy="36" r="1.9"/>
+      <circle cx="80" cy="20" r="1.3"/>
+      <circle cx="24" cy="44" r="1.3"/>
+    </g>
+    <circle cx="86" cy="26" r="9.5" fill="#ECD6A8"/>
+    <circle cx="90" cy="23.5" r="8" fill="#FBF5EB"/>
+    <path d="M55 36 L82 96 H28 Z" fill="none" stroke="#22395B" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M55 60 L44.5 96 H65.5 Z" fill="#EBB7BE"/>
+    <path d="M55 36 V60" stroke="#9DB29A" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M55 36 L49 29 M55 36 L61 29" stroke="#22395B" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M55 29 V21 L65 24.5 L55 29" fill="#9DB29A"/>
+  </g>
+  <!-- wordmark -->
+  <text class="wm" x="160" y="160" font-size="38" text-anchor="middle">The Pitched Fort</text>
+  <!-- script tagline -->
+  <text class="tag" x="160" y="210" font-size="40" text-anchor="middle">luxury sleepovers</text>
+</svg>
