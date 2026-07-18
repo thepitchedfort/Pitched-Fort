@@ -7,6 +7,20 @@ import Button from '../components/Button'
 // into public/photos and add another { src, label } entry below.
 const categories = [
   {
+    title: 'Styled Celebration Moments',
+    icon: '📸',
+    photos: [
+      { src: '/photos/moment-full-service.jpg', label: 'Full venue transformation' },
+      { src: '/photos/moment-movie-night.jpg', label: 'Movie night details' },
+      { src: '/photos/moment-swiftie.jpg', label: 'Swiftie touches' },
+      { src: '/photos/moment-under-the-sea.jpg', label: 'Under the sea' },
+      { src: '/photos/moment-disco.jpg', label: 'Disco glam' },
+      { src: '/photos/moment-paint-bar.jpg', label: 'Craft & paint bar' },
+      { src: '/photos/moment-spa.jpg', label: 'Mini spa night' },
+      { src: '/photos/moment-sleep-masks.jpg', label: 'Personalized keepsakes' },
+    ],
+  },
+  {
     title: 'Sleepover Setups',
     icon: '⛺',
     photos: [

@@ -18,27 +18,15 @@ export const themes = [
   {
     name: 'Taylor Swift',
     icon: '🎤',
+    image: '/photos/taylor-swift.jpg',
     accent: ['#D98C97', '#D9B26A'],
     description:
       'A swiftie’s dream era — friendship bracelets, sparkle, and all your favorite eras in one cozy night.',
   },
   {
-    name: 'Unicorn',
-    icon: '🦄',
-    accent: ['#EBB7BE', '#9DB29A'],
-    description:
-      'Pastel rainbows, shimmer, and a touch of mane-event magic for the dreamiest celebration.',
-  },
-  {
-    name: 'Football',
-    icon: '🏈',
-    accent: ['#7E9579', '#22395B'],
-    description:
-      'Game-day energy and team spirit — the perfect cozy huddle for your little MVP.',
-  },
-  {
     name: 'Harry Potter',
     icon: '⚡',
+    image: '/photos/harry-potter.jpg',
     accent: ['#22395B', '#D9B26A'],
     description:
       'A spellbinding night of house colors, wands, and wonder fit for any young witch or wizard.',
@@ -60,46 +48,12 @@ export const themes = [
       'Cowgirl-meets-disco-ball — boots, sparkle, and a whole lot of playful, dance-all-night charm.',
   },
   {
-    name: 'Gamer Time',
-    icon: '🎮',
-    accent: ['#7C3AED', '#9DB29A'],
-    description:
-      'Level up the night with pixel-perfect styling for the player-one in your life.',
-  },
-  {
-    name: 'Superhero',
-    icon: '🦸',
-    accent: ['#D98C97', '#22395B'],
-    description:
-      'Capes, courage, and comic-book color for a celebration that saves the (sleepover) day.',
-  },
-  {
     name: 'A Night at the Movies',
     icon: '🍿',
+    image: '/photos/night-at-the-movies.jpg',
     accent: ['#22395B', '#D9B26A'],
     description:
       'Cozy theater vibes, a snack-bar moment, and a big-screen feel for movie-loving guests.',
-  },
-  {
-    name: 'Comic Book',
-    icon: '💥',
-    accent: ['#D9B26A', '#D98C97'],
-    description:
-      'Pow! Bam! Bold colors and graphic-novel flair for an action-packed overnight adventure.',
-  },
-  {
-    name: 'DinoRawr',
-    icon: '🦖',
-    accent: ['#7E9579', '#D9B26A'],
-    description:
-      'Prehistoric fun with a roar — perfect for little explorers who love all things dino.',
-  },
-  {
-    name: 'Sunflower',
-    icon: '🌻',
-    accent: ['#D9B26A', '#9DB29A'],
-    description:
-      'Sunny, golden, and full of warmth — a cheerful bloom-filled celebration to remember.',
   },
   {
     name: 'Garden Flowers',
@@ -128,6 +82,7 @@ export const themes = [
   {
     name: 'Clouds',
     icon: '☁️',
+    image: '/photos/clouds.jpg',
     accent: ['#C4D2BF', '#EBB7BE'],
     description:
       'Soft, dreamy, and ever-so-cozy — a sweet head-in-the-clouds sleepover for gentle souls.',

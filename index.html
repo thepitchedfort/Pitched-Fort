@@ -175,8 +175,8 @@
 <!-- ───────────── WHAT WE DO ───────────── -->
 <section class="bg-cream-deep/50 py-16">
   <div class="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-2">
-    <div class="placeholder flex aspect-[5/4] w-full flex-col items-center justify-center gap-2 rounded-3xl text-center" role="img" aria-label="Styled details photo placeholder">
-      <span class="text-4xl opacity-80">🎨</span><span class="px-4 text-xs font-bold uppercase tracking-widest text-navy/55">Add a styled detail photo</span>
+    <div class="aspect-[5/4] w-full overflow-hidden rounded-3xl shadow-soft">
+      <img src="photos/styled-detail.jpg" alt="A styled Pitched Fort sleepover setup with pink pillows and cozy details" loading="lazy" class="h-full w-full object-cover" />
     </div>
     <div>
       <p class="font-script text-2xl text-blush-deep">what we do</p>
@@ -325,7 +325,7 @@
         src="https://docs.google.com/forms/d/e/1FAIpQLSduGDZtB_ERR1MVa0e-LiXNowE3Xcb9UMvyE6VDoe45n0Yl-w/viewform?embedded=true"
         title="The Pitched Fort inquiry form"
         class="w-full rounded-2xl"
-        style="height:1500px;border:0"
+        style="height:3900px;border:0"
         loading="lazy"
         marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
@@ -424,22 +424,15 @@ const FULL_LIST = ['We deliver right to your door','Complete, professional setup
 const DIY_LIST = ['Pick up the kit from our Shreveport location','Set up with our easy step-by-step guide','Enjoy the party on your schedule','Return everything after your event','A budget-friendly, hands-on option'];
 const THEMES = [
   {name:'Let’s Glow Crazy',icon:'🌈',a:['#7C3AED','#EBB7BE'],img:'photos/glow.jpg',d:'Neon, black-light magic, and glow-everything for a sleepover that lights up the whole room.'},
-  {name:'Taylor Swift',icon:'🎤',a:['#D98C97','#D9B26A'],d:'A swiftie’s dream era — friendship bracelets, sparkle, and all your favorite eras in one cozy night.'},
-  {name:'Unicorn',icon:'🦄',a:['#EBB7BE','#9DB29A'],d:'Pastel rainbows, shimmer, and a touch of mane-event magic for the dreamiest celebration.'},
-  {name:'Football',icon:'🏈',a:['#7E9579','#22395B'],d:'Game-day energy and team spirit — the perfect cozy huddle for your little MVP.'},
-  {name:'Harry Potter',icon:'⚡',a:['#22395B','#D9B26A'],d:'A spellbinding night of house colors, wands, and wonder fit for any young witch or wizard.'},
+  {name:'Taylor Swift',icon:'🎤',a:['#D98C97','#D9B26A'],img:'photos/taylor-swift.jpg',d:'A swiftie’s dream era — friendship bracelets, sparkle, and all your favorite eras in one cozy night.'},
+  {name:'Harry Potter',icon:'⚡',a:['#22395B','#D9B26A'],img:'photos/harry-potter.jpg',d:'A spellbinding night of house colors, wands, and wonder fit for any young witch or wizard.'},
   {name:'Space',icon:'🚀',a:['#1A2C46','#7C3AED'],img:'photos/space.jpg',d:'Moons, stars, and galaxies far away — a cosmic campout under the (twinkle-light) night sky.'},
   {name:'Cow at the Disco',icon:'🐄',a:['#EBB7BE','#22395B'],img:'photos/cow-at-the-disco.jpg',d:'Cowgirl-meets-disco-ball — boots, sparkle, and a whole lot of playful, dance-all-night charm.'},
-  {name:'Gamer Time',icon:'🎮',a:['#7C3AED','#9DB29A'],d:'Level up the night with pixel-perfect styling for the player-one in your life.'},
-  {name:'Superhero',icon:'🦸',a:['#D98C97','#22395B'],d:'Capes, courage, and comic-book color for a celebration that saves the (sleepover) day.'},
-  {name:'A Night at the Movies',icon:'🍿',a:['#22395B','#D9B26A'],d:'Cozy theater vibes, a snack-bar moment, and a big-screen feel for movie-loving guests.'},
-  {name:'Comic Book',icon:'💥',a:['#D9B26A','#D98C97'],d:'Pow! Bam! Bold colors and graphic-novel flair for an action-packed overnight adventure.'},
-  {name:'DinoRawr',icon:'🦖',a:['#7E9579','#D9B26A'],d:'Prehistoric fun with a roar — perfect for little explorers who love all things dino.'},
-  {name:'Sunflower',icon:'🌻',a:['#D9B26A','#9DB29A'],d:'Sunny, golden, and full of warmth — a cheerful bloom-filled celebration to remember.'},
+  {name:'A Night at the Movies',icon:'🍿',a:['#22395B','#D9B26A'],img:'photos/night-at-the-movies.jpg',d:'Cozy theater vibes, a snack-bar moment, and a big-screen feel for movie-loving guests.'},
   {name:'Garden Flowers',icon:'🌷',a:['#EBB7BE','#9DB29A'],img:'photos/garden-flowers.jpg',d:'Soft florals and botanical charm for a sweet, garden-party-meets-sleepover dream.'},
   {name:'Summer in Paris',icon:'🗼',a:['#EBB7BE','#D9B26A'],img:'photos/summer-in-paris.jpg',d:'Très chic! Eiffel Tower elegance, pastel macarons, and an oh-so-darling French flair.'},
   {name:'Jungle',icon:'🐯',a:['#7E9579','#D9B26A'],img:'photos/jungle.jpg',d:'A wild and wonderful safari adventure full of lush greens and friendly creatures.'},
-  {name:'Clouds',icon:'☁️',a:['#C4D2BF','#EBB7BE'],d:'Soft, dreamy, and ever-so-cozy — a sweet head-in-the-clouds sleepover for gentle souls.'},
+  {name:'Clouds',icon:'☁️',a:['#C4D2BF','#EBB7BE'],img:'photos/clouds.jpg',d:'Soft, dreamy, and ever-so-cozy — a sweet head-in-the-clouds sleepover for gentle souls.'},
   {name:'Halloween',icon:'🎃',a:['#D9B26A','#1A2C46'],img:'photos/halloween.jpg',d:'Playfully spooky and oh-so-cute — a not-too-scary celebration with all the seasonal charm.'},
   {name:'Christmas',icon:'🎄',a:['#7E9579','#D98C97'],img:'photos/christmas.jpg',d:'Twinkle lights, cocoa, and holiday magic for the coziest most-wonderful-time sleepover.'},
   {name:'Custom Color Scheme',icon:'🎨',a:['#9DB29A','#EBB7BE'],img:'photos/custom-color.jpg',d:'Love our setups but want your own palette? We’ll style the whole party around your colors.'},
@@ -461,14 +454,14 @@ const ADDONS = [
   {name:'Karaoke Machine',price:'$65',icon:'🎤',d:'Lights, mic, encore! A karaoke setup that turns the living room into center stage.'},
 ];
 const GALLERY = [
-  {img:'photos/hero.jpg',label:'Full-service setup'},
-  {img:'photos/garden-flowers.jpg',label:'Garden flowers'},
-  {img:'photos/halloween.jpg',label:'Seasonal styling'},
-  {img:'photos/jungle.jpg',label:'Jungle adventure'},
-  {img:'photos/space.jpg',label:'Space theme'},
-  {img:'photos/cow-at-the-disco.jpg',label:'Cow at the disco'},
-  {img:'photos/summer-in-paris.jpg',label:'Summer in Paris'},
-  {img:'photos/custom-color.jpg',label:'Custom colors'},
+  {img:'photos/moment-full-service.jpg',label:'Full venue transformation'},
+  {img:'photos/moment-movie-night.jpg',label:'Movie night details'},
+  {img:'photos/moment-swiftie.jpg',label:'Swiftie touches'},
+  {img:'photos/moment-under-the-sea.jpg',label:'Under the sea'},
+  {img:'photos/moment-disco.jpg',label:'Disco glam'},
+  {img:'photos/moment-paint-bar.jpg',label:'Craft & paint bar'},
+  {img:'photos/moment-spa.jpg',label:'Mini spa night'},
+  {img:'photos/moment-sleep-masks.jpg',label:'Personalized keepsakes'},
 ];
 const FAQS = [
   {q:'How far ahead should I book?',a:'We recommend reaching out 3–4 weeks before your event to lock in your date, especially for weekends and busy seasons. That said, never hesitate to ask about a last-minute celebration — we’ll always do our best to make it happen.'},

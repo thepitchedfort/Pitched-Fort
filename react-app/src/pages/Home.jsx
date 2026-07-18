@@ -95,7 +95,7 @@ export default function Home() {
       {/* ───────── WHAT WE DO ───────── */}
       <section className="bg-cream-deep/50 py-16">
         <div className="container-tpf grid items-center gap-10 lg:grid-cols-2">
-          <ImagePlaceholder src="/photos/garden-flowers.jpg" ratio="aspect-[5/4]" alt="Styled sleepover details with florals and balloons" />
+          <ImagePlaceholder src="/photos/styled-detail.jpg" ratio="aspect-[5/4]" alt="A styled Pitched Fort sleepover setup with pink pillows and cozy details" />
           <div>
             <p className="eyebrow">what we do</p>
             <h2 className="mt-1 font-serif text-3xl font-semibold text-navy sm:text-4xl">
@@ -203,14 +203,14 @@ export default function Home() {
           />
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {[
-              { src: '/photos/hero.jpg', label: 'Full-service setup' },
-              { src: '/photos/garden-flowers.jpg', label: 'Garden flowers' },
-              { src: '/photos/halloween.jpg', label: 'Seasonal styling' },
-              { src: '/photos/jungle.jpg', label: 'Jungle adventure' },
-              { src: '/photos/space.jpg', label: 'Space theme' },
-              { src: '/photos/cow-at-the-disco.jpg', label: 'Cow at the disco' },
-              { src: '/photos/summer-in-paris.jpg', label: 'Summer in Paris' },
-              { src: '/photos/custom-color.jpg', label: 'Custom colors' },
+              { src: '/photos/moment-full-service.jpg', label: 'Full venue transformation' },
+              { src: '/photos/moment-movie-night.jpg', label: 'Movie night details' },
+              { src: '/photos/moment-swiftie.jpg', label: 'Swiftie touches' },
+              { src: '/photos/moment-under-the-sea.jpg', label: 'Under the sea' },
+              { src: '/photos/moment-disco.jpg', label: 'Disco glam' },
+              { src: '/photos/moment-paint-bar.jpg', label: 'Craft & paint bar' },
+              { src: '/photos/moment-spa.jpg', label: 'Mini spa night' },
+              { src: '/photos/moment-sleep-masks.jpg', label: 'Personalized keepsakes' },
             ].map((g, i) => (
               <ImagePlaceholder key={i} src={g.src} ratio="aspect-square" alt={g.label} />
             ))}
