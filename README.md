@@ -15,7 +15,7 @@ Both have **identical content and design**. Start with the standalone — it's t
 
 ---
 
-## 1. The Standalone Site (recommended to start)
+## 1. The Standalone Site (recommended to start) 
 
 Everything lives in a single file: **`index.html`**.
 
