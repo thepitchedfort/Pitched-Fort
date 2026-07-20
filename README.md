@@ -114,7 +114,7 @@ Drop images into `react-app/public/` (e.g. `public/gallery/`) and reference them
 
 - **Confirm your Instagram & TikTok handles** (placeholders use `@thepitchedfort`).
 - **Replace the policy placeholder text** with your final, reviewed contract / DIY-setup language
-  (the structure is built; the wording is a friendly placeholder — see the on-page note).
+  (the structure is built; the wording is a friendly placeholder — see the on-page note) .
 - **Add real photos** wherever you see a dashed placeholder.
 - The graphics you mentioned (pricing, add-on, DIY form) didn't arrive as files, so the visual
   system was rebuilt from your written design direction. If you share them, the palette/details can
