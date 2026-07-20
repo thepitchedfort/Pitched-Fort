@@ -9,7 +9,7 @@ You have **two versions** of the site. Use whichever fits you best:
 | Version | Where | Needs tools? | Best for |
 |---|---|---|---|
 | **Standalone site** | `index.html` (this folder) | ❌ None | Viewing now, easy edits, simple hosting |
-| **React project** | `react-app/` folder | ✅ Node.js | Multi-page site, developer handoff, future growth |
+| **React project** | `react-app/` folder | ✅ Node.js | Multi-page site , developer handoff, future growth |
 
 Both have **identical content and design**. Start with the standalone — it's the easiest.
 
