@@ -357,8 +357,9 @@
 
 <!-- ───────────── CONTACT / INQUIRY ───────────── -->
 <!--
-  The inquiry form is the live Google Form embedded via <iframe> below.
-  Submissions go straight to the linked Google Form / responses sheet.
+  The inquiry form is a live Google Form. We link out to it (opens in a new
+  tab) rather than embedding it, so visitors never hit Google's third-party
+  cookie prompt. Submissions go straight to the linked Google Form.
 -->
 <section id="contact" class="scroll-mt relative overflow-hidden bg-gradient-to-b from-navy to-navy-deep text-cream">
   <div class="pointer-events-none absolute inset-0 overflow-hidden opacity-70" aria-hidden="true" data-starfield></div>
@@ -372,14 +373,23 @@
 
 <section class="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8">
   <div class="grid gap-10 lg:grid-cols-[1fr_340px]">
-    <div class="card overflow-hidden p-4 sm:p-6">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSduGDZtB_ERR1MVa0e-LiXNowE3Xcb9UMvyE6VDoe45n0Yl-w/viewform?embedded=true"
-        title="The Pitched Fort inquiry form"
-        class="w-full rounded-2xl"
-        style="height:3900px;border:0"
-        loading="lazy"
-        marginheight="0" marginwidth="0">Loading…</iframe>
+    <!-- Inquiry call-to-action (opens the Google Form in a new tab) -->
+    <div class="card overflow-hidden">
+      <div class="grid md:grid-cols-2">
+        <div class="relative min-h-[260px] md:min-h-full">
+          <img src="photos/moment-full-service.jpg" alt="A styled Pitched Fort sleepover tent party ready for a birthday celebration" loading="lazy" class="absolute inset-0 h-full w-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/25 to-transparent md:bg-gradient-to-r"></div>
+        </div>
+        <div class="relative flex flex-col justify-center gap-4 bg-gradient-to-br from-blush-soft/60 via-cream to-cream p-8 text-center sm:p-10 md:text-left">
+          <span class="font-script text-3xl text-blush-deep">ready when you are</span>
+          <h3 class="font-serif text-3xl font-semibold text-navy sm:text-4xl">Send Your Inquiry</h3>
+          <p class="leading-relaxed text-navy/70">Tap below to open our quick inquiry form. Share your date, theme, and guest count — it only takes a couple of minutes, and we’ll personally follow up to confirm every detail.</p>
+          <div class="mt-2 flex flex-col items-center gap-3 md:items-start">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSduGDZtB_ERR1MVa0e-LiXNowE3Xcb9UMvyE6VDoe45n0Yl-w/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary !px-8 !py-4 !text-base shadow-soft">Start Your Inquiry →</a>
+            <p class="text-[11px] font-bold uppercase tracking-widest text-navy/45">Takes ~2 minutes · No obligation · We reply personally</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <aside class="flex flex-col gap-6">
@@ -397,10 +407,6 @@
         <h3 class="font-serif text-xl font-semibold text-navy">Follow along</h3>
         <address class="mt-3 not-italic text-sm leading-relaxed text-navy/75">The Pitched Fort<br/>Shreveport, LA<br/><span class="text-navy/55">Pickup address shared with confirmed DIY clients.</span></address>
         <a href="https://www.facebook.com/thepitchedfort" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block text-sm font-semibold text-blush-deep hover:underline">Facebook →</a>
-      </div>
-      <div class="rounded-4xl border border-dashed border-navy/25 bg-white/60 p-6 text-sm text-navy/70">
-        <p class="font-bold text-navy">Trouble with the form?</p>
-        <p class="mt-2 leading-relaxed">Open it in a new tab on <a href="https://docs.google.com/forms/d/e/1FAIpQLSduGDZtB_ERR1MVa0e-LiXNowE3Xcb9UMvyE6VDoe45n0Yl-w/viewform" target="_blank" rel="noopener noreferrer" class="font-semibold text-blush-deep underline">Google Forms</a> instead.</p>
       </div>
     </aside>
   </div>
